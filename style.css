@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #111;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Business Cards */
+
+.business-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.business-card {
+    background: white;
+    width: 450px;
+    min-height: 350px;
+    padding: 45px 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.business-card h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.business-card p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+
+button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    color: white;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .business-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .business-card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+}
+.details-section {
+    background: white;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.details-section h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.tour-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.tour-image {
+    flex: 1;
+}
+
+.tour-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.tour-info {
+    flex: 1;
+}
+
+.tour-info h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.tour-info p {
+    line-height: 1.6;
+}
+
+.tour-info ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.tour-info li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.call-btn,
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 5px 0 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    background: #111;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .tour-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tour-image img {
+        max-width: 100%;
+    }
+}
+.mobile-services {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.service-card {
+    background: #f5f5f5;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    line-height: 1.5;
+}
+
+.mobile-contact {
+    margin-top: 40px;
+}
+
+.mobile-contact h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .mobile-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+.location {
+    margin-top: 30px;
+    padding: 30px;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+}
+
+.location h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.location p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.map-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.map-btn:hover {
+    opacity: 0.8;
+}
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 5px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-buttons a:hover {
+    opacity: 0.8;
+}
+.navbar {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+}
+
+.navbar h2 {
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    background: #25D366;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    font-size: 28px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #111;
+    color: white;
+}
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+.contact-box {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 35px 20px;
+    background: #111;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin-bottom: 15px;
+}
+
+.contact-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-call,
+.contact-whatsapp {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-call {
+    background: #333;
+}
+
+.contact-whatsapp {
+    background: #25D366;
+}
+.location-section {
+    background: white;
+    padding: 50px 30px;
+}
+
+.location {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.location h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.location p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.map-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
