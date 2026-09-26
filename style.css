@@ -1077,86 +1077,353 @@ footer p {
     }
 
 }
-/* ================= CUSTOMER REVIEW ================= */
+/* =====================================================
+   PREMIUM CUSTOMER REVIEW SECTION
+   JIJAI ENTERPRISES
+===================================================== */
 
 .review-section {
-    background: #f5f5f5;
-    padding: 70px 25px;
-    text-align: center;
+    position: relative;
+    padding: 100px 25px;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.10), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(255, 255, 255, 0.05), transparent 30%),
+        #080808;
+    overflow: hidden;
 }
+
+/* Background decorative circles */
+
+.review-section::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: 50%;
+    top: -100px;
+    left: -100px;
+}
+
+.review-section::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(212, 175, 55, 0.10);
+    border-radius: 50%;
+    bottom: -180px;
+    right: -100px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.review-section .section-heading {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.review-section .section-heading span {
+    display: inline-block;
+    color: #d4af37;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.review-section .section-heading h2 {
+    color: white;
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 0 0 12px;
+    font-weight: 800;
+}
+
+.review-section .section-heading p {
+    color: #999;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   REVIEW BOX
+===================================================== */
 
 .review-box {
-    max-width: 550px;
-    margin: 30px auto 0;
-    background: white;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    position: relative;
+    z-index: 3;
+
+    width: min(100%, 600px);
+    margin: auto;
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 24px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+
+    transition: 0.4s ease;
 }
 
+.review-box:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(212, 175, 55, 0.55);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.65),
+        0 0 35px rgba(212, 175, 55, 0.08);
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.review-box h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   STAR RATING
+===================================================== */
+
 .rating-stars {
-    margin: 20px 0 5px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0 12px;
 }
 
 .rating-stars button {
-    background: none;
-    border: none;
-    font-size: 38px;
-    color: #ccc;
+    width: 52px;
+    height: 52px;
+
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    color: #555;
+    font-size: 28px;
+
     cursor: pointer;
-    transition: 0.2s;
+
+    transition:
+        transform 0.25s ease,
+        color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .rating-stars button:hover {
-    color: #f5b400;
-    transform: scale(1.1);
+    transform: translateY(-5px) scale(1.08);
+
+    color: #ffd84d !important;
+
+    background: rgba(212, 175, 55, 0.12);
+
+    border-color: rgba(212, 175, 55, 0.5);
+
+    box-shadow:
+        0 8px 25px rgba(212, 175, 55, 0.18);
 }
 
+
+/* Selected rating text */
+
 #rating-text {
-    font-weight: bold;
-    margin-bottom: 20px;
+    min-height: 20px;
+
+    color: #d4af37 !important;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin: 15px 0 28px;
 }
+
+
+/* =====================================================
+   INPUTS
+===================================================== */
 
 .review-box input,
 .review-box textarea {
+
     width: 100%;
-    padding: 13px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
     box-sizing: border-box;
-    font-family: inherit;
+
+    background: rgba(255,255,255,0.045);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    color: white;
+
+    padding: 15px 17px;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+
+    margin-bottom: 14px;
+}
+
+.review-box input::placeholder,
+.review-box textarea::placeholder {
+    color: #777;
+}
+
+.review-box input:focus,
+.review-box textarea:focus {
+
+    border-color: #d4af37;
+
+    background: rgba(212,175,55,0.05);
+
+    box-shadow:
+        0 0 0 3px rgba(212,175,55,0.08);
 }
 
 .review-box textarea {
-    height: 100px;
-    resize: none;
+    min-height: 120px;
+    resize: vertical;
 }
 
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
 .submit-review {
-    margin-top: 12px;
-    padding: 13px 25px;
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 15px 25px;
+
     border: none;
-    border-radius: 10px;
-    background: #111;
-    color: white;
-    font-weight: bold;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #f1d56b,
+        #b88a19
+    );
+
+    color: #080808;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
     cursor: pointer;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(212,175,55,0.20);
+
+    transition: 0.3s ease;
+}
+
+.submit-review::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.45),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+
+    transition: 0.6s;
+}
+
+.submit-review:hover::before {
+    left: 130%;
 }
 
 .submit-review:hover {
-    background: #c9a227;
-    color: #111;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 40px rgba(212,175,55,0.30);
 }
+
+.submit-review:active {
+    transform: translateY(0);
+}
+
+
+/* =====================================================
+   MOBILE RESPONSIVE
+===================================================== */
 
 @media (max-width: 600px) {
 
+    .review-section {
+        padding: 75px 18px;
+    }
+
     .review-box {
-        padding: 22px;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+
+    .review-box h3 {
+        font-size: 19px;
+    }
+
+    .rating-stars {
+        gap: 5px;
     }
 
     .rating-stars button {
-        font-size: 32px;
+        width: 46px;
+        height: 46px;
+        font-size: 24px;
+        border-radius: 11px;
+    }
+
+    .review-section .section-heading h2 {
+        font-size: 30px;
     }
 
 }
