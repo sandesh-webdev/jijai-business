@@ -44,23 +44,61 @@
     </nav>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= PREMIUM HERO ================= -->
 
     <header class="hero">
 
-        <h1>Jijai Enterprises</h1>
+        <div class="hero-overlay"></div>
 
-        <p>Travel & Mobile Services</p>
+        <div class="hero-content">
 
-        <div class="hero-buttons">
+            <span class="hero-small">
+                WELCOME TO
+            </span>
 
-            <a href="#tours-section">
-                🚗 Jijai Tours
-            </a>
+            <h1>
+                Jijai <span>Enterprises</span>
+            </h1>
 
-            <a href="#mobile-section">
-                📱 Mobile Shop
-            </a>
+            <p class="hero-main">
+                Travel • Mobile • Service
+            </p>
+
+            <p class="hero-description">
+                Your trusted destination for comfortable travel,
+                mobile sales, repairing and accessories.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#tours-section" class="hero-btn primary-btn">
+                    🚗 Explore Tours
+                </a>
+
+                <a href="#mobile-section" class="hero-btn secondary-btn">
+                    📱 Mobile Shop
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div>
+                    <strong>🚗</strong>
+                    <span>7-Seater Ertiga</span>
+                </div>
+
+                <div>
+                    <strong>📱</strong>
+                    <span>Mobile Services</span>
+                </div>
+
+                <div>
+                    <strong>📞</strong>
+                    <span>9199929599</span>
+                </div>
+
+            </div>
 
         </div>
 
@@ -71,7 +109,7 @@
 
     <main class="business-container">
 
-        <div class="business-card tours">
+        <div class="business-card tours-card">
 
             <div class="icon">🚗</div>
 
@@ -82,14 +120,20 @@
                 for local and outstation travel.
             </p>
 
+            <div class="card-features">
+                <span>✓ Family Trips</span>
+                <span>✓ Local Travel</span>
+                <span>✓ Outstation</span>
+            </div>
+
             <button onclick="showTours()">
-                Explore Tours
+                Explore Tours →
             </button>
 
         </div>
 
 
-        <div class="business-card mobile">
+        <div class="business-card mobile-card-main">
 
             <div class="icon">📱</div>
 
@@ -100,8 +144,14 @@
                 mobile accessories.
             </p>
 
+            <div class="card-features">
+                <span>✓ Mobile Sales</span>
+                <span>✓ Repairing</span>
+                <span>✓ Accessories</span>
+            </div>
+
             <button onclick="showMobile()">
-                Explore Mobile Shop
+                Explore Mobile Shop →
             </button>
 
         </div>
@@ -113,11 +163,17 @@
 
     <section id="tours-section" class="details-section">
 
-        <h2>🚗 Jijai Tours</h2>
+        <div class="section-heading">
 
-        <p class="subtitle">
-            Comfortable and reliable travel with our 7-Seater Ertiga.
-        </p>
+            <span>TRAVEL WITH US</span>
+
+            <h2>🚗 Jijai Tours</h2>
+
+            <p>
+                Comfortable and reliable travel with our 7-Seater Ertiga.
+            </p>
+
+        </div>
 
 
         <div class="tour-content">
@@ -127,51 +183,80 @@
                 <img src="ertiga.jpg"
                     alt="Jijai Tours Ertiga">
 
+                <div class="image-badge">
+                    🚗 7 Seater
+                </div>
+
             </div>
 
 
             <div class="tour-info">
 
-                <h3>7-Seater Ertiga</h3>
+                <span class="small-title">
+                    COMFORTABLE JOURNEY
+                </span>
+
+                <h3>
+                    Travel comfortably with Jijai Tours
+                </h3>
 
                 <p>
                     Our Ertiga is available for local
-                    and outstation travel.
+                    and outstation travel. Perfect for
+                    family trips and comfortable journeys.
                 </p>
 
-                <ul>
+                <div class="tour-features">
 
-                    <li>7-Seater Ertiga</li>
-                    <li>Local Travel</li>
-                    <li>Outstation Travel</li>
-                    <li>Family Trips</li>
-                    <li>Comfortable Journey</li>
+                    <div>
+                        <strong>🚗</strong>
+                        <span>7-Seater</span>
+                    </div>
 
-                </ul>
+                    <div>
+                        <strong>📍</strong>
+                        <span>Local Travel</span>
+                    </div>
+
+                    <div>
+                        <strong>🛣️</strong>
+                        <span>Outstation</span>
+                    </div>
+
+                    <div>
+                        <strong>👨‍👩‍👧</strong>
+                        <span>Family Trips</span>
+                    </div>
+
+                </div>
 
                 <p class="contact">
                     📞 9199929599
                 </p>
 
 
-                <a href="tel:9199929599"
-                    class="call-btn">
-                    Call Now
-                </a>
+                <div class="tour-buttons">
+
+                    <a href="tel:9199929599"
+                        class="call-btn">
+                        📞 Call Now
+                    </a>
 
 
-                <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Tours,%20I%20want%20to%20book%20your%207-Seater%20Ertiga.%20Please%20share%20availability%20and%20details."
-                    class="whatsapp-btn"
-                    target="_blank">
-                    WhatsApp Booking
-                </a>
+                    <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Tours,%20I%20want%20to%20book%20your%207-Seater%20Ertiga.%20Please%20share%20availability%20and%20details."
+                        class="whatsapp-btn"
+                        target="_blank">
+                        💬 WhatsApp Booking
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <div class="mobile-contact">
+        <div class="mobile-contact booking-box">
 
             <h3>🚗 Book Your Journey</h3>
 
@@ -193,13 +278,19 @@
 
     <!-- ================= MOBILE SHOP ================= -->
 
-    <section id="mobile-section" class="details-section">
+    <section id="mobile-section" class="details-section mobile-section">
 
-        <h2>📱 Jijai Mobile Shop</h2>
+        <div class="section-heading">
 
-        <p class="subtitle">
-            Mobile Sales, Repairing & Accessories
-        </p>
+            <span>SMART CHOICE</span>
+
+            <h2>📱 Jijai Mobile Shop</h2>
+
+            <p>
+                Mobile Sales, Repairing & Accessories
+            </p>
+
+        </div>
 
 
         <!-- ================= SHOP GALLERY ================= -->
@@ -235,15 +326,20 @@
             </p>
 
 
-            <!-- MOBILE 1 -->
-
             <div class="mobile-gallery">
 
-                <div class="mobile-card">
+
+                <!-- MOBILE 1 -->
+
+                <div class="mobile-product-card">
 
                     <div class="mobile-placeholder">
                         📱
                     </div>
+
+                    <span class="available">
+                        AVAILABLE
+                    </span>
 
                     <h4>Mobile Model 1</h4>
 
@@ -262,11 +358,15 @@
 
                 <!-- MOBILE 2 -->
 
-                <div class="mobile-card">
+                <div class="mobile-product-card">
 
                     <div class="mobile-placeholder">
                         📱
                     </div>
+
+                    <span class="available">
+                        AVAILABLE
+                    </span>
 
                     <h4>Mobile Model 2</h4>
 
@@ -285,11 +385,15 @@
 
                 <!-- MOBILE 3 -->
 
-                <div class="mobile-card">
+                <div class="mobile-product-card">
 
                     <div class="mobile-placeholder">
                         📱
                     </div>
+
+                    <span class="available">
+                        AVAILABLE
+                    </span>
 
                     <h4>Mobile Model 3</h4>
 
@@ -374,13 +478,13 @@
 
             <a href="tel:9199929599"
                 class="call-btn">
-                Call Now
+                📞 Call Now
             </a>
 
             <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Mobile%20Shop,%20I%20want%20to%20know%20about%20mobile%20phones%20and%20accessories."
                 class="whatsapp-btn"
                 target="_blank">
-                WhatsApp Us
+                💬 WhatsApp Us
             </a>
 
         </div>
@@ -422,6 +526,10 @@
 
         <div class="location" id="location">
 
+            <span class="location-small">
+                FIND US
+            </span>
+
             <h3>📍 Our Location</h3>
 
             <p>
@@ -457,9 +565,6 @@
     </footer>
 
 
-    <script src="script.js"></script>
-
-
     <!-- ================= FLOATING WHATSAPP ================= -->
 
     <a href="https://wa.me/9199929599"
@@ -467,6 +572,9 @@
         target="_blank">
         💬
     </a>
+
+
+    <script src="script.js"></script>
 
 </body>
 
