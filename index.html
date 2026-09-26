@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jijai Enterprises | Tours & Mobile Shop</title>
+    <title>Jijai Enterprises</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,22 +17,18 @@
     <nav class="navbar">
 
         <div class="brand">
-
             <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM.jpeg"
                  alt="Jijai Enterprises Logo">
 
             <h2>Jijai Enterprises</h2>
-
         </div>
 
         <div class="nav-links">
-
             <a href="#">Home</a>
             <a href="#tours-section">Tours</a>
             <a href="#mobile-section">Mobile Shop</a>
-            <a href="#review-section">Reviews</a>
             <a href="#location">Location</a>
-
+            <a href="#reviews">Reviews</a>
         </div>
 
     </nav>
@@ -46,41 +42,37 @@
 
             <span class="hero-small">WELCOME TO</span>
 
-            <h1>
-                Jijai <span>Enterprises</span>
-            </h1>
+            <h1>Jijai Enterprises</h1>
 
-            <p>
-                Travel • Mobile • Service
-            </p>
+            <p>Travel • Mobile • Service</p>
 
             <div class="hero-buttons">
 
-                <a href="#tours-section" class="gold-btn">
-                    Explore Tours
-                </a>
+                <button onclick="showTours()">
+                    🚗 Explore Tours
+                </button>
 
-                <a href="#mobile-section" class="dark-btn">
-                    Mobile Shop
-                </a>
+                <button onclick="showMobile()">
+                    📱 Mobile Shop
+                </button>
 
             </div>
 
             <div class="hero-features">
 
                 <div>
-                    🚗
-                    <strong>7-Seater Ertiga</strong>
+                    <strong>🚗</strong>
+                    <span>7-Seater Ertiga</span>
                 </div>
 
                 <div>
-                    📱
-                    <strong>Mobile Services</strong>
+                    <strong>📱</strong>
+                    <span>Mobile Services</span>
                 </div>
 
                 <div>
-                    📞
-                    <strong>9199929599</strong>
+                    <strong>📞</strong>
+                    <span>9199929599</span>
                 </div>
 
             </div>
@@ -95,60 +87,66 @@
     <section class="business-section">
 
         <div class="section-heading">
-
             <span>OUR SERVICES</span>
-
-            <h2>One Place. Two Services.</h2>
-
-            <p>
-                Travel comfortably and get your mobile needs sorted.
-            </p>
-
+            <h2>What We Offer</h2>
+            <p>Everything you need, under one place.</p>
         </div>
 
 
         <div class="business-grid">
 
+            <!-- Tours -->
+
             <div class="business-card">
 
-                <div class="business-icon">
+                <div class="card-icon">
                     🚗
                 </div>
 
-                <span>JIJAI TOURS</span>
-
-                <h3>Comfortable Travel</h3>
+                <h3>Jijai Tours</h3>
 
                 <p>
-                    7-Seater Ertiga available for
-                    local and outstation travel.
+                    Comfortable 7-Seater Ertiga available
+                    for local and outstation travel.
                 </p>
 
-                <a href="#tours-section">
-                    View Tours →
-                </a>
+                <div class="feature-pills">
+                    <span>7 Seater</span>
+                    <span>Local</span>
+                    <span>Outstation</span>
+                </div>
+
+                <button onclick="showTours()" class="card-btn">
+                    View Tours
+                </button>
 
             </div>
 
 
+            <!-- Mobile -->
+
             <div class="business-card">
 
-                <div class="business-icon">
+                <div class="card-icon">
                     📱
                 </div>
 
-                <span>JIJAI MOBILE</span>
-
-                <h3>Mobile Shop & Service</h3>
+                <h3>Jijai Mobile Shop</h3>
 
                 <p>
-                    Mobile sales, repairing and
-                    accessories at one place.
+                    Mobile sales, repairing and accessories
+                    for your everyday needs.
                 </p>
 
-                <a href="#mobile-section">
-                    Visit Mobile Shop →
-                </a>
+                <div class="feature-pills">
+                    <span>Mobiles</span>
+                    <span>Repair</span>
+                    <span>Accessories</span>
+                </div>
+
+                <button onclick="showMobile()" class="card-btn">
+                    View Shop
+                </button>
 
             </div>
 
@@ -167,9 +165,7 @@
 
             <h2>🚗 Comfortable Travel</h2>
 
-            <p>
-                Your journey, our responsibility.
-            </p>
+            <p>Your journey, our responsibility.</p>
 
         </div>
 
@@ -199,9 +195,9 @@
                 </h3>
 
                 <p>
-                    Enjoy a comfortable and convenient
-                    journey with our 7-Seater Ertiga.
-                    Available for local and outstation travel.
+                    Enjoy a comfortable and convenient journey
+                    with our 7-Seater Ertiga. Available for
+                    local and outstation travel.
                 </p>
 
 
@@ -216,6 +212,7 @@
                         </span>
                     </div>
 
+
                     <div>
                         <strong>📍</strong>
 
@@ -225,6 +222,7 @@
                         </span>
                     </div>
 
+
                     <div>
                         <strong>🛣️</strong>
 
@@ -233,6 +231,7 @@
                             Long distance trips
                         </span>
                     </div>
+
 
                     <div>
                         <strong>👨‍👩‍👧</strong>
@@ -266,12 +265,11 @@
                         📞 Call Now
                     </a>
 
+
                     <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Tours,%20I%20want%20to%20book%20your%207-Seater%20Ertiga.%20Please%20share%20availability%20and%20details."
                        class="whatsapp-btn"
                        target="_blank">
-
                         💬 WhatsApp Booking
-
                     </a>
 
                 </div>
@@ -295,8 +293,93 @@
             <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Tours,%20I%20am%20planning%20a%20trip.%20Please%20share%20your%20availability%20and%20details."
                class="whatsapp-btn"
                target="_blank">
-
                 💬 Plan My Trip
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MOBILE SHOP ================= -->
+
+    <section id="mobile-section" class="mobile-section">
+
+        <div class="section-heading">
+
+            <span>JIJAI MOBILE SHOP</span>
+
+            <h2>📱 Mobile Sales & Service</h2>
+
+            <p>
+                Mobile phones, repairing and accessories.
+            </p>
+
+        </div>
+
+
+        <!-- ONLY 3 SHOP PHOTOS -->
+
+        <div class="shop-gallery">
+
+            <div class="shop-photo">
+
+                <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM (1).jpeg"
+                     alt="Jijai Mobile Shop">
+
+            </div>
+
+
+            <div class="shop-photo">
+
+                <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM (2).jpeg"
+                     alt="Jijai Mobile Shop">
+
+            </div>
+
+
+            <div class="shop-photo">
+
+                <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM (3).jpeg"
+                     alt="Jijai Mobile Shop">
+
+            </div>
+
+        </div>
+
+
+        <div class="mobile-services">
+
+            <div>
+                📱 <strong>Mobile Sales</strong>
+            </div>
+
+            <div>
+                🔧 <strong>Mobile Repairing</strong>
+            </div>
+
+            <div>
+                🎧 <strong>Accessories</strong>
+            </div>
+
+        </div>
+
+
+        <div class="mobile-contact">
+
+            <h3>
+                Need Mobile Service?
+            </h3>
+
+            <p>
+                Contact Jijai Mobile Shop.
+            </p>
+
+            <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Mobile,%20I%20want%20to%20know%20about%20mobile%20services."
+               target="_blank"
+               class="whatsapp-btn">
+
+                💬 WhatsApp Us
 
             </a>
 
@@ -305,180 +388,32 @@
     </section>
 
 
-<!-- ================= MOBILE SHOP ================= -->
+    <!-- ================= CONTACT ================= -->
 
-<section id="mobile-section" class="mobile-section">
+    <section class="contact-section">
 
-    <div class="section-heading">
+        <div class="contact-box">
 
-        <span>JIJAI MOBILE SHOP</span>
+            <span>GET IN TOUCH</span>
 
-        <h2>📱 Mobile Sales & Service</h2>
-
-        <p>
-            Mobile phones, repairing and accessories.
-        </p>
-
-    </div>
-
-
-    <div class="shop-gallery">
-
-        <div class="shop-photo">
-            <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM (1).jpeg"
-                 alt="Jijai Mobile Shop">
-        </div>
-
-        <div class="shop-photo">
-            <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM (2).jpeg"
-                 alt="Jijai Mobile Shop">
-        </div>
-
-        <div class="shop-photo">
-            <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM (3).jpeg"
-                 alt="Jijai Mobile Shop">
-        </div>
-
-        <div class="shop-photo">
-            <img src="WhatsApp Image 2026-09-26 at 2.27.37 PM.jpeg"
-                 alt="Jijai Mobile Shop">
-        </div>
-
-    </div>
-
-
-    <div class="mobile-services">
-
-        <div>
-            📱
-            <strong>Mobile Sales</strong>
-        </div>
-
-        <div>
-            🔧
-            <strong>Mobile Repairing</strong>
-        </div>
-
-        <div>
-            🎧
-            <strong>Accessories</strong>
-        </div>
-
-    </div>
-
-
-    <div class="mobile-contact">
-
-        <h3>Need Mobile Service?</h3>
-
-        <p>
-            Contact Jijai Mobile Shop.
-        </p>
-
-        <a href="https://wa.me/9199929599?text=Hello%20Jijai%20Mobile,%20I%20want%20to%20know%20about%20mobile%20services."
-           target="_blank"
-           class="whatsapp-btn">
-
-            💬 WhatsApp Us
-
-        </a>
-
-    </div>
-
-</section>
-
-    <!-- ================= CUSTOMER REVIEW ================= -->
-
-    <section id="review-section" class="premium-review">
-
-        <div class="review-title">
-
-            <span>CUSTOMER EXPERIENCE</span>
-
-            <h2>How Was Your Experience?</h2>
+            <h2>Contact Jijai Enterprises</h2>
 
             <p>
-                Rate your experience with Jijai Enterprises
+                Have a question or want to book our service?
             </p>
 
-        </div>
+            <div class="contact-buttons">
 
+                <a href="tel:9199929599"
+                   class="call-btn">
+                    📞 9199929599
+                </a>
 
-        <div class="review-card">
-
-            <div class="review-top">
-
-                <div>
-
-                    <small>
-                        YOUR RATING
-                    </small>
-
-                    <h3>
-                        Rate us out of 5
-                    </h3>
-
-                </div>
-
-
-                <div class="rating-number"
-                     id="ratingNumber">
-
-                    0<span>/5</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="big-stars">
-
-                <button onclick="setRating(1)">★</button>
-                <button onclick="setRating(2)">★</button>
-                <button onclick="setRating(3)">★</button>
-                <button onclick="setRating(4)">★</button>
-                <button onclick="setRating(5)">★</button>
-
-            </div>
-
-
-            <div class="rating-message"
-                 id="ratingMessage">
-
-                Select your rating
-
-            </div>
-
-
-            <div class="review-form">
-
-                <input
-                    type="text"
-                    id="customer-name"
-                    placeholder="Your name">
-
-                <textarea
-                    id="customer-review"
-                    placeholder="Tell us about your experience..."></textarea>
-
-
-                <button
-                    class="premium-submit"
-                    onclick="sendReview()">
-
-                    Send Review
-
-                    <span>→</span>
-
-                </button>
-
-            </div>
-
-
-            <div class="review-note">
-
-                🔒 Your feedback will be sent directly
-                to Jijai Enterprises.
+                <a href="https://wa.me/9199929599"
+                   target="_blank"
+                   class="whatsapp-btn">
+                    💬 WhatsApp
+                </a>
 
             </div>
 
@@ -534,44 +469,74 @@
     </section>
 
 
-    <!-- ================= CONTACT ================= -->
+    <!-- ================= REVIEWS ================= -->
 
-    <section class="contact-section">
+    <section id="reviews" class="premium-review">
 
-        <div>
+        <div class="section-heading">
 
-            <span>
-                GET IN TOUCH
-            </span>
+            <span>CUSTOMER FEEDBACK</span>
 
-            <h2>
-                Let's Connect
-            </h2>
+            <h2>⭐ Rate Your Experience</h2>
 
             <p>
-                For Tours, Mobile Services or enquiries,
-                contact Jijai Enterprises.
+                Your feedback helps Jijai Enterprises improve.
             </p>
 
         </div>
 
 
-        <div class="contact-buttons">
+        <div class="review-card">
 
-            <a href="tel:9199929599"
-               class="call-btn">
+            <div class="rating-display">
 
-                📞 9199929599
+                <div class="big-stars">
 
-            </a>
+                    <button onclick="setRating(1)">★</button>
+                    <button onclick="setRating(2)">★</button>
+                    <button onclick="setRating(3)">★</button>
+                    <button onclick="setRating(4)">★</button>
+                    <button onclick="setRating(5)">★</button>
 
-            <a href="https://wa.me/9199929599"
-               target="_blank"
-               class="whatsapp-btn">
+                </div>
 
-                💬 WhatsApp
 
-            </a>
+                <div id="ratingNumber"
+                     class="rating-number">
+
+                    0<span>/5</span>
+
+                </div>
+
+                <p id="ratingMessage">
+                    Select your rating
+                </p>
+
+            </div>
+
+
+            <div class="review-form">
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Your Name">
+
+
+                <textarea
+                    id="customer-review"
+                    placeholder="Write your feedback..."></textarea>
+
+
+                <button
+                    onclick="sendReview()"
+                    class="review-submit">
+
+                    Send Feedback 💬
+
+                </button>
+
+            </div>
 
         </div>
 
@@ -582,26 +547,35 @@
 
     <footer>
 
-        <h3>
-            Jijai Enterprises
-        </h3>
+        <div class="footer-content">
 
-        <p>
-            Tours • Mobile • Service
-        </p>
+            <h2>Jijai Enterprises</h2>
 
-        <small>
+            <p>
+                Travel • Mobile • Service
+            </p>
+
+            <p>
+                📞 9199929599
+            </p>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
             © 2026 Jijai Enterprises. All Rights Reserved.
-        </small>
+
+        </div>
 
     </footer>
 
 
-    <!-- ================= FLOATING WHATSAPP ================= -->
+    <!-- FLOATING WHATSAPP -->
 
     <a href="https://wa.me/9199929599"
-       target="_blank"
-       class="floating-whatsapp">
+       class="floating-whatsapp"
+       target="_blank">
 
         💬
 
