@@ -232,6 +232,74 @@ button:hover {
 }
 
 
+/* ================= MOBILE SALES ================= */
+
+.mobile-sales {
+    max-width: 1100px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.mobile-sales h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.sales-subtitle {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.mobile-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mobile-card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.mobile-placeholder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.mobile-card h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.mobile-price {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0 15px;
+}
+
+.mobile-enquiry {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.mobile-enquiry:hover {
+    opacity: 0.85;
+}
+
+
 /* ================= MOBILE SERVICES ================= */
 
 .mobile-services {
@@ -490,6 +558,14 @@ html {
         max-width: 100%;
     }
 
+    .mobile-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .mobile-placeholder {
+        height: 280px;
+    }
+
     .mobile-services {
         flex-direction: column;
         align-items: center;
@@ -506,66 +582,6 @@ html {
 
     .gallery-grid img {
         height: 300px;
-    }
-
-}
-/* ================= MOBILE SALES ================= */
-
-.mobile-sales {
-    max-width: 1100px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.mobile-sales h3 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.sales-subtitle {
-    font-size: 17px;
-    margin-bottom: 30px;
-}
-
-.mobile-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.mobile-card {
-    background: #f5f5f5;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-}
-
-.mobile-placeholder {
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    border-radius: 12px;
-    font-size: 80px;
-    margin-bottom: 15px;
-}
-
-.mobile-card h4 {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.mobile-card p {
-    margin: 0;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-
-    .mobile-gallery {
-        grid-template-columns: 1fr;
     }
 
 }
