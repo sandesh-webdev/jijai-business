@@ -958,7 +958,20 @@ footer p {
     transition: 0.3s;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
+/* ================= GOOGLE MAP ================= */
 
+.map-container {
+    width: 100%;
+    margin: 25px 0;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+}
 .booking-box:hover {
     transform: translateY(-3px);
 }
