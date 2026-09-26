@@ -927,3 +927,38 @@ footer p {
     }
 
 }
+/* ================= TOUR UPGRADE ================= */
+
+.tour-contact {
+    margin-top: 20px;
+}
+
+.availability {
+    color: #16803a !important;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.tour-features div {
+    transition: 0.3s;
+}
+
+.tour-features div:hover {
+    background: #111;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.tour-features div:hover span {
+    color: white;
+}
+
+.booking-box {
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.booking-box:hover {
+    transform: translateY(-3px);
+}
